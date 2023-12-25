@@ -47,4 +47,20 @@ public class Library implements Iterable<Book>{
             }
         }
     }
+
+    public static void removeByAuthor(String name){
+        for (int i = 0; i < books.size(); i++){
+            if (books.get(i).getAuthor() == name) {
+                books.remove(i);
+            }
+        }
+    }
+
+    public static void removeByYear(int year){
+        for (int i = 0; i < books.size(); i++){
+            if (books.get(i).getPublishedYear() == year) {
+                books.remove(i);
+            }
+        }
+    }
 }
