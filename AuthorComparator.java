@@ -1,4 +1,3 @@
-import java.lang.Comparable;
 import java.util.Comparator;
 
 public class AuthorComparator implements Comparator<Book> {

@@ -5,7 +5,7 @@ public class Book extends Library implements Comparable<Book>{
     protected String author;
     protected Integer publishedYear;
 
-    public void book(String title, String author, Integer publishedYear){
+    public Book(String title, String author, Integer publishedYear){
         this.title = title;
         this.author = author;
         this.publishedYear = publishedYear;
