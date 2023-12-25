@@ -1,6 +1,6 @@
 import java.lang.Comparable;
 
-public class Book implements Comparable<Book>{
+public class Book extends Library implements Comparable<Book>{
     protected String title;
     protected String author;
     protected Integer publishedYear;
