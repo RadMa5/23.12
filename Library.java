@@ -39,4 +39,12 @@ public class Library implements Iterable<Book>{
             System.out.println(newItr.next());
         }
     }
+
+    public static void removeBook(String name){
+        for (int i = 0; i < books.size(); i++){
+            if (books.get(i).getTitle() == name) {
+                books.remove(i);
+            }
+        }
+    }
 }
